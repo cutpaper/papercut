@@ -1,1 +1,1 @@
-[{"title":"剪纸123之hello篇","uri":"2014/12/14/paper_hello/"},{"title":"一刀剪贴花之一刀定乾坤","uri":"2014/12/14/papercut_prim1/"}]
+[{"title":"初识剪纸-优美的文化","uri":"2014/12/14/paper_hello/"},{"title":"一刀定乾坤之一刀剪五星、蝴蝶、灯笼","uri":"2014/12/14/papercut_prim1/"},{"title":"剪纸入门教程2-剪雪花\\小花朵\\樱花","uri":"2014/12/17/papercut_prim2/"}]
