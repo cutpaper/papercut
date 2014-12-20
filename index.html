@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
-  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
-<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
     <title>剪纸吧</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
@@ -78,13 +76,13 @@
 
   <section class="post" itemscope itemprop="blogPost">
   
-    <a href="/2014/12/14/paper_hello/" title="初识剪纸-优美的文化" itemprop="url">
+    <a href="/2014/12/15/papercut_prim1/" title="一刀定乾坤之一刀剪五星、蝴蝶、灯笼" itemprop="url">
   
-      <time datetime="2014-12-14T14:07:21.000Z" itemprop="datePublished">Dec 14 2014</time>
-    <h1 itemprop="name">初识剪纸-优美的文化</h1>
+      <time datetime="2014-12-15T14:07:21.000Z" itemprop="datePublished">Dec 15 2014</time>
+    <h1 itemprop="name">一刀定乾坤之一刀剪五星、蝴蝶、灯笼</h1>
     
      
-       <p itemprop="description" >第一次接触剪纸，就被这种文化深深吸引，太美了，集文化与艺术于一身。作为一种民俗文化，在历史的发展过程中具有深刻的人文底蕴，其文化价值也越来越受重视。它所表现出的形式特点体现了对真、善、美的追求和向往，体现了“以人为本、天人合一”的思想观念。剪纸艺术来源于生活，是我国文化的重要载体</p>
+       <p itemprop="description" >千里之行，始于足下。先从最简单的学起吧。这节我们学学一刀剪，也称一刀定乾坤。</p>
       
     
   </a>
@@ -92,13 +90,13 @@
 
   <section class="post" itemscope itemprop="blogPost">
   
-    <a href="/2014/12/14/papercut_prim1/" title="一刀定乾坤之一刀剪五星、蝴蝶、灯笼" itemprop="url">
+    <a href="/2014/12/14/paper_hello/" title="初识剪纸-优美的文化" itemprop="url">
   
       <time datetime="2014-12-14T14:07:21.000Z" itemprop="datePublished">Dec 14 2014</time>
-    <h1 itemprop="name">一刀定乾坤之一刀剪五星、蝴蝶、灯笼</h1>
+    <h1 itemprop="name">初识剪纸-优美的文化</h1>
     
      
-       <p itemprop="description" >千里之行，始于足下。先从最简单的学起吧。这节我们学学一刀剪，也称一刀定乾坤。</p>
+       <p itemprop="description" >第一次接触剪纸，就被这种文化深深吸引，太美了，集文化与艺术于一身。作为一种民俗文化，在历史的发展过程中具有深刻的人文底蕴，其文化价值也越来越受重视。它所表现出的形式特点体现了对真、善、美的追求和向往，体现了“以人为本、天人合一”的思想观念。剪纸艺术来源于生活，是我国文化的重要载体</p>
       
     
   </a>
@@ -160,8 +158,8 @@
   <div class="linkslist">
   <p class="asidetitle">Links</p>
     <ul>
-      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
-      <li><a href="http://gengbiao.me" target="_blank" title="coney">coney's Blog</a></li>
+      <li><a href="http://haomou.net" target="_blank" title="我的技术博客">皓眸IT</a></li>
+      <li><a href="http://pictcake.cn" target="_blank" title="我的创业项目">那一刻数码蛋糕</a></li>
     </ul>
 </div>
 
@@ -169,15 +167,6 @@
   <div class="rsspart">
 	<a href="atom.xml" target="_blank" title="rss">RSS</a>
 </div>
-
-  
-  <div class="tagcloudlist">
-    <p class="asidetitle">Tag Cloud</p>
-    <div class="tagcloudlist clearfix">
-       <a href="/tags/一刀剪/" style="font-size: 10.00px;">一刀剪</a><a href="/tags/人物/" style="font-size: 10.00px;">人物</a><a href="/tags/入门/" style="font-size: 20.00px;">入门</a><a href="/tags/剪纸/" style="font-size: 20.00px;">剪纸</a>
-    </div>
-  </div>
-
 
 </aside>
 </div>
@@ -234,6 +223,34 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+// added by chero
+    var str = "<dl id='outline'></dl>";var ss = $(str);$('h3').each(function(a,b){ss.append('<dd class="sideCatalog-item2" id="sideToolbar-item--1_3"><span class="sideCatalog-index2">'+ a +'</span><a href="#'+ $(b).attr("id") +'" class="nslog:1026" title="'+ $(b).attr("id") +'" onclick="return false;">'+$(b).attr("id")+'</a><span class="sideCatalog-dot"></span></dd>');});$("#asidepart").append(ss);
+
+    window.top_outline = $("#outline").offset().top;
+    $(window).scroll(function () {
+        if((window.top_outline - $(window).scrollTop()) <=  ($(window).height()/2 - $("#outline").height()/2)){
+            $("#outline").css({'position':'fixed'});
+            $("#outline").css({'margin-top':'0px'});
+            $("#outline").css({'top':($(window).height()/2 - $("#outline").height()/2)});
+        }else{
+            $("#outline").css({'position':'relative'});
+            $("#outline").css({'margin-top':'80px'});
+            $("#outline").css({'top':''});
+        }
+        $("#outline a").each(function(a,b){
+            if($(window).scrollTop() > $($(b).attr("href")).offset().top){
+                $(b).css({"color":"#fb6580"});
+            }else{
+                $(b).css({"color":"#67a9d2"});
+            }
+
+        })
+    });
+    $("#outline a").click(function(){
+        $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({scrollTop: $($(this).attr("href")).offset().top}, 1000);
+    });
+    $('.floatnone').each(function(){$(this).parent().css({"float":'none'})});
 });
 </script>
 

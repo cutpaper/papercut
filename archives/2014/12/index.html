@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
-  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
-<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
     <title>Archives: 2014/12 | 剪纸吧</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
@@ -85,20 +83,20 @@
 
   <section class="post" itemscope itemprop="blogPost">
   
-    <a href="/2014/12/14/paper_hello/" title="初识剪纸-优美的文化" itemprop="url">
+    <a href="/2014/12/15/papercut_prim1/" title="一刀定乾坤之一刀剪五星、蝴蝶、灯笼" itemprop="url">
   
-      <time datetime="2014-12-14T14:07:21.000Z" itemprop="datePublished">Dec 14 2014</time>
-    <h1 itemprop="name">初识剪纸-优美的文化</h1>
+      <time datetime="2014-12-15T14:07:21.000Z" itemprop="datePublished">Dec 15 2014</time>
+    <h1 itemprop="name">一刀定乾坤之一刀剪五星、蝴蝶、灯笼</h1>
     
   </a>
 </section>
 
   <section class="post" itemscope itemprop="blogPost">
   
-    <a href="/2014/12/14/papercut_prim1/" title="一刀定乾坤之一刀剪五星、蝴蝶、灯笼" itemprop="url">
+    <a href="/2014/12/14/paper_hello/" title="初识剪纸-优美的文化" itemprop="url">
   
       <time datetime="2014-12-14T14:07:21.000Z" itemprop="datePublished">Dec 14 2014</time>
-    <h1 itemprop="name">一刀定乾坤之一刀剪五星、蝴蝶、灯笼</h1>
+    <h1 itemprop="name">初识剪纸-优美的文化</h1>
     
   </a>
 </section>
@@ -161,6 +159,34 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+// added by chero
+    var str = "<dl id='outline'></dl>";var ss = $(str);$('h3').each(function(a,b){ss.append('<dd class="sideCatalog-item2" id="sideToolbar-item--1_3"><span class="sideCatalog-index2">'+ a +'</span><a href="#'+ $(b).attr("id") +'" class="nslog:1026" title="'+ $(b).attr("id") +'" onclick="return false;">'+$(b).attr("id")+'</a><span class="sideCatalog-dot"></span></dd>');});$("#asidepart").append(ss);
+
+    window.top_outline = $("#outline").offset().top;
+    $(window).scroll(function () {
+        if((window.top_outline - $(window).scrollTop()) <=  ($(window).height()/2 - $("#outline").height()/2)){
+            $("#outline").css({'position':'fixed'});
+            $("#outline").css({'margin-top':'0px'});
+            $("#outline").css({'top':($(window).height()/2 - $("#outline").height()/2)});
+        }else{
+            $("#outline").css({'position':'relative'});
+            $("#outline").css({'margin-top':'80px'});
+            $("#outline").css({'top':''});
+        }
+        $("#outline a").each(function(a,b){
+            if($(window).scrollTop() > $($(b).attr("href")).offset().top){
+                $(b).css({"color":"#fb6580"});
+            }else{
+                $(b).css({"color":"#67a9d2"});
+            }
+
+        })
+    });
+    $("#outline a").click(function(){
+        $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({scrollTop: $($(this).attr("href")).offset().top}, 1000);
+    });
+    $('.floatnone').each(function(){$(this).parent().css({"float":'none'})});
 });
 </script>
 
